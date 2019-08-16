@@ -10,15 +10,20 @@
       <% include ../helpers/navbar %>
 
 
-    <h1>Hello World</h1>
+    <h1>Database Web APP</h1>
   </div>
+  <button class="googleAuth" onClick="handleSignIn()">Google Sign-in</button>
+  <form onSubmit="handleMessageFormSubmit()" action="#">
+    Title:<br />
+    <input id='post-title'><br />
+    Body: <br />
+    <textarea id="post-body" cols="30" rows="10"></textarea><br />
+    <button>Submit</button>
+  </form>
 
-  <p>Click on the button for a surprise.</p>
+  <div id="post-listing">
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
-
-  <div id="image"></div>
-
+  </div>
 </body>
 
 </html>
